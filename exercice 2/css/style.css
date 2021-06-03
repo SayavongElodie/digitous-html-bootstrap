@@ -10,8 +10,9 @@
 
 .color3{
     background-color: red;
+    color: red;
 }
 
-@media (max-width:575px){
-    
+.container{
+    padding-top: 0.5rem;
 }
