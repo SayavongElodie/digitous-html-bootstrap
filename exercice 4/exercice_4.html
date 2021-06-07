@@ -15,7 +15,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Homepage</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -25,8 +25,16 @@
                 <a class="nav-link " aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Team</a>
-              </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Team
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Vincent</a></li>
+                    <li><a class="dropdown-item" href="#">Béatrice</a></li>
+                    <li><a class="dropdown-item" href="#">Rosita</a></li>
+                  </ul>
+                </li>              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
               </li>
@@ -35,7 +43,13 @@
         </div>
       </nav>   
 
-      <!--container 1-->
+    <!--alert-->
+
+    <div class="alert alert-danger" role="alert">
+      Une erreur serveur est survenue. veuillez râfraichir la page ou rééssayer plus tard.
+    </div>
+
+    <!--container 1-->
 
     <div class="container-md color d-flex flex-row bd-highlight mb-3 justify-content-between">
     <div class="mt-5 ms-5 ">
@@ -46,6 +60,58 @@
         <h4 class="text-center pt-3">Slim Shady</h4>
     </div>
     </div>
+
+    <!--modal-->
+    
+    <div class="button-modal">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Sign up Newsletter
+      </button>
+    </div> 
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+        </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">S'abonner</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5>Newsletter</h5>
+            <button type="button" class="bnt-close" data-bs-dismiss="modal" aria-label="close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label" id="exampleInputEmail1" aria-describedby="emailHelp"></label>
+                </div>
+              </form>
+            </p>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary">S'abonner</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <div class="container-md">
         <div class="d-flex flex-row bd-highlight mb-3 ">
@@ -64,7 +130,7 @@
         </div>
     </div>
 
-      
+
       <script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>
